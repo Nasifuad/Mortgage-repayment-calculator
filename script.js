@@ -5,11 +5,13 @@ const mortage = document.getElementById("mortage");
 const interest = document.getElementById("interest");
 const years = document.getElementById("years");
 submit.addEventListener("click", () => {
-  if (check_empty()) {
+  if (check_empty() === true) {
+    console.log("true");
     box2.style.display = "none";
     box1.style.display = "flex";
   } else {
-    error();
+    console.log("false");
+    // error();
   }
 });
 

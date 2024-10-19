@@ -80,58 +80,43 @@ body {
   font-size: 0.9rem;
   color: var(--Slate500);
 }
-#amount {
-  width: 100%;
-  border: 1px solid var(--Slate300);
-  padding: 10px;
-  border-radius: 7px;
-  outline: none;
-}
-#amount:hover {
-  border: 1px solid var(--Slate700);
-}
-.ammount {
-  position: relative;
-}
 
-.euro,
+.ammount {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--Slate300);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ammount:hover {
+  border-color: var(--slate900);
+}
+#amount {
+  outline: none;
+  border: none;
+}
+.euro {
+  background-color: var(--Slate100);
+  padding: 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
 .year,
 .percentage {
   background-color: var(--Slate100);
-  position: absolute;
-  bottom: 1.5%;
-  left: 0.9%;
-  padding: 10px;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  color: var(--Slate300);
-  font-weight: 900;
-}
-
-.euroerr {
-  background-color: var(--Red);
-  position: absolute;
-  bottom: 1.5%;
-  left: 0.5%;
-  padding: 10px;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-  color: var(--White);
-  font-weight: 900;
-}
-.yearerr,
-.percentageerr {
-  background-color: var(--Red);
-  position: absolute;
-  bottom: 1.5%;
-  right: 0.2%;
   padding: 10px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
-  color: var(--White);
-  font-weight: 900;
 }
-
+.euroerr,
+.yearerr,
+.percentageerr {
+  color: var(--White);
+  font-size: 0.7rem;
+  background-color: var(--Red);
+}
 .term_rate {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -147,21 +132,24 @@ body {
 }
 .term,
 .rate {
-  position: relative;
+  color: black;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Slate300);
+  border-radius: 7px;
 }
 #term,
 #rate {
-  border: 1px solid var(--Slate300);
-  padding: 10px;
-  border-radius: 7px;
   outline: none;
   width: 100%;
-  display: block;
+  border: none;
+  margin-left: 5px;
 }
-#term:hover,
-#rate:hover {
+.term:hover,
+.rate:hover {
   border: 1px solid var(--Slate700);
 }
+
 .mortage_type {
   display: flex;
   flex-direction: column;
