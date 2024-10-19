@@ -156,6 +156,7 @@ body {
   border-radius: 7px;
   outline: none;
   width: 100%;
+  display: block;
 }
 #term:hover,
 #rate:hover {
