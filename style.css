@@ -80,7 +80,16 @@ body {
   font-size: 0.9rem;
   color: var(--Slate500);
 }
-
+.red {
+  width: 100%;
+  position: relative;
+  border: 1px solid var(--Slate300);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--Red);
+}
 .ammount {
   width: 100%;
   position: relative;
@@ -97,22 +106,33 @@ body {
   outline: none;
   border: none;
 }
-.euro {
+#euro {
   background-color: var(--Slate100);
   padding: 10px;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 }
-.year,
-.percentage {
+#year,
+#percentage {
   background-color: var(--Slate100);
   padding: 10px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
 }
+.erreuro {
+  color: var(--White);
+  background-color: var(--Red);
+  padding: 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  opacity: 0.9;
+}
 .err {
   color: var(--White);
-  font-size: 0.7rem;
+  padding: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  opacity: 0.9;
   background-color: var(--Red);
 }
 .term_rate {

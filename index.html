@@ -24,8 +24,8 @@
         <div class="form_section">
           <div class="mortage_amount">
             <label for="amount">Mortgage Amount</label>
-            <div class="ammount">
-              <p class="euro" id="euro">€</p>
+            <div class="ammount" id="ammount">
+              <p id="euro">€</p>
               <input type="text" id="amount" />
             </div>
             <p class="error" id="error_amount">This filed is required</p>
@@ -33,17 +33,17 @@
           <div class="term_rate">
             <div class="term_year">
               <label for="term">Mortgage Term</label>
-              <div class="term">
+              <div class="term" id="termm">
                 <input type="text" id="term" />
-                <p class="year" id="years">Years</p>
+                <p id="year">Years</p>
               </div>
               <p class="error" id="error_term">This filed is required</p>
             </div>
             <div class="rate_percentage">
               <label for="rate">Percentage Rate</label>
-              <div class="rate">
+              <div class="rate" id="ratee">
                 <input type="text" id="rate" />
-                <p class="percentage" id="percent">%</p>
+                <p id="percentage">%</p>
               </div>
               <p class="error" id="error_rate">This filed is required</p>
             </div>
@@ -51,11 +51,21 @@
           <div class="mortage_type">
             <label for="" class="type">Mortgage type </label>
             <div class="repayment">
-              <input type="radio" name="type" id="repayment" />
+              <input
+                type="radio"
+                name="type"
+                id="repayment"
+                value="repayment"
+              />
               <label for="repayment">Repayment</label>
             </div>
             <div class="interest_only">
-              <input type="radio" name="type" id="interest_only" />
+              <input
+                type="radio"
+                name="type"
+                id="interest_only"
+                value="interest"
+              />
               <label for="interest_only">Interest Only</label>
             </div>
             <p class="error" id="error_type">This filed is required</p>
