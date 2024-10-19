@@ -14,4 +14,334 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: var(--Slate100);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 700px;
+  background-color: var(--White);
+}
+.calculator {
+  width: 100%;
+  /* width: auto; */
+  background-color: var(--White);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: start;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clc {
+  color: var(--Slate700);
+}
+.clc:hover {
+  cursor: pointer;
+  color: var(--slate900);
+}
+.header p {
+  text-decoration: underline;
+  color: var(--Slate300);
+  font-size: 0.7rem;
+}
+.form_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mortage_amount {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 10px;
+}
+.mortage_amount label,
+.type,
+.term_year label,
+.rate_percentage label {
+  font-size: 0.9rem;
+  color: var(--Slate500);
+}
+#amount {
+  width: 100%;
+  border: 1px solid var(--Slate300);
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+}
+#amount:hover {
+  border: 1px solid var(--Slate700);
+}
+.ammount {
+  position: relative;
+}
+
+.euro,
+.year,
+.percentage {
+  background-color: var(--Slate100);
+  position: absolute;
+  bottom: 1.5%;
+  left: 0.9%;
+  padding: 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  color: var(--Slate300);
+  font-weight: 900;
+}
+
+.euroerr {
+  background-color: var(--Red);
+  position: absolute;
+  bottom: 1.5%;
+  left: 0.5%;
+  padding: 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  color: var(--White);
+  font-weight: 900;
+}
+.yearerr,
+.percentageerr {
+  background-color: var(--Red);
+  position: absolute;
+  bottom: 1.5%;
+  right: 0.2%;
+  padding: 10px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: var(--White);
+  font-weight: 900;
+}
+
+.term_rate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+}
+.term_year,
+.rate_percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--Slate500);
+}
+.term,
+.rate {
+  position: relative;
+}
+#term,
+#rate {
+  border: 1px solid var(--Slate300);
+  padding: 10px;
+  border-radius: 7px;
+  outline: none;
+  width: 100%;
+}
+#term:hover,
+#rate:hover {
+  border: 1px solid var(--Slate700);
+}
+.mortage_type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.repayment,
+.interest_only {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--Slate900);
+  width: 100%;
+  border: 1px solid var(--Slate300);
+  padding: 10px;
+  border-radius: 7px;
+  font-weight: 900;
+  transition: border 0.3s ease;
+}
+
+.repayment:hover,
+.interest_only:hover {
+  cursor: pointer;
+  border: 1px solid var(--Lime);
+  /* background-color: #fafae0; */
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--Slate300);
+  border-radius: 50%;
+  outline: none;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+  border: 2px solid var(--Lime);
+  cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--Lime);
+  border-radius: 50%;
+}
+#submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  min-width: fit-content;
+  padding: 10px;
+  border-radius: 7222px;
+  border: none;
+  background-color: var(--Lime);
+  color: var(--Slate900);
+  font-weight: 900;
+  cursor: pointer;
+  gap: 10px;
+}
+#submit:hover {
+  filter: opacity(0.8);
+}
+.result_box {
+  width: 100%;
+  background-color: var(--Slate900);
+  border-radius: 0px 10px 10px 40px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+.result {
+  color: var(--White);
+}
+.bla {
+  color: var(--White);
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+  opacity: 0.8;
+}
+.result_show {
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 3px solid var(--Lime);
+  background-color: #0e2431;
+  border-radius: 10px 10px 10px 10px;
+  padding: 1rem;
+}
+.line {
+  border: none;
+  border-top: 0.1px solid var(--Lime);
+  opacity: 0.5;
+}
+.monthly,
+.over_the_term {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.monthly_term,
+.over_term {
+  color: var(--Slate100);
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+.pay,
+#monthly_pay {
+  color: var(--Lime);
+  font-size: 3.3rem;
+  font-weight: 600;
+  /* background-color: black; */
+}
+.overterm_pay,
+#overterm_pay {
+  color: var(--White);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#box1 {
+  display: none;
+}
+#box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+#box2 img {
+  width: 50%;
+}
+h2 {
+  color: var(--White);
+}
+#box2 p {
+  color: var(--White);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.error {
+  color: var(--Red);
+  font-size: 0.8rem;
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+  }
+  .header {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+  }
+  .result_box {
+    border-radius: 0px;
+    width: 100%;
+  }
 }
