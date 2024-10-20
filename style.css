@@ -50,16 +50,15 @@ body {
 }
 .clc {
   color: var(--Slate700);
+  text-decoration: underline;
+
+  font-size: 0.7rem;
 }
 .clc:hover {
   cursor: pointer;
   color: var(--slate900);
 }
-.header p {
-  text-decoration: underline;
-  color: var(--Slate300);
-  font-size: 0.7rem;
-}
+
 .form_section {
   width: 100%;
   display: flex;
@@ -92,7 +91,6 @@ body {
 }
 .ammount {
   width: 100%;
-  position: relative;
   border: 1px solid var(--Slate300);
   border-radius: 7px;
   display: flex;
@@ -108,6 +106,7 @@ body {
 }
 #euro {
   background-color: var(--Slate100);
+  color: var(--Slate300);
   padding: 10px;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
@@ -115,6 +114,7 @@ body {
 #year,
 #percentage {
   background-color: var(--Slate100);
+  color: var(--Slate300);
   padding: 10px;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
