@@ -86,7 +86,6 @@ body {
   border-radius: 7px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   gap: 10px;
   overflow: hidden;
 }

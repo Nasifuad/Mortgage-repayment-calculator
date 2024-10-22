@@ -46,6 +46,11 @@ clc.addEventListener("click", () => {
   box2.style.display = "flex";
   box1.style.display = "none";
 });
+addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    submit.click();
+  }
+});
 submit.addEventListener("click", () => {
   if (check_empty() === true) {
     error();
