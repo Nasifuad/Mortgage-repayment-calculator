@@ -86,7 +86,9 @@ body {
   border-radius: 7px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 10px;
+  overflow: hidden;
 }
 #ammount:hover {
   border-color: var(--slate900);
@@ -140,6 +142,7 @@ body {
   gap: 10px;
   color: var(--Slate500);
 }
+
 #termm,
 #ratee {
   color: black;
@@ -147,6 +150,10 @@ body {
   align-items: center;
   border: 1px solid var(--Slate300);
   border-radius: 7px;
+}
+#termm:hover,
+#ratee:hover {
+  border: 1px solid var(--Slate900);
 }
 #term,
 #rate {
