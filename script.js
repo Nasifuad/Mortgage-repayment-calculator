@@ -59,6 +59,7 @@ submit.addEventListener("click", () => {
     box1.style.display = "flex";
     const monthlyPayment = calculate_monthly();
     const overtheterm = calculate_repay();
+    console.log(overtheterm);
     monthly_pay.innerText = monthlyPayment;
     overterm_pay.innerText = overtheterm;
     console.log(monthlyPayment);
